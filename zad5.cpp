@@ -9,9 +9,8 @@ int main() {
 	int plits;
 	setlocale(LC_ALL, "russian");
 	cout << "Введите числа n, m, a(1<=n, m, a <=10^9)" << endl;
-	cin >> n;
-	cin >> m;
-	cin >> a;
+	cin >> n >> m >> a;
+
 	hor = (n + a - 1) / a;//вертикально 
 	ver = (m + a - 1) / a;//горизонтально
 
