@@ -7,12 +7,13 @@ int main() {
 	long n, m, a, hor, ver;
 	int plits;
 	setlocale(LC_ALL, "russian");
-	cout << "Ââåäèòå ÷èñëà n, m, a(1<=n, m, a <=10^9)" << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð° n, m, a(1<=n, m, a <=10^9)" << endl;
 	cin >> n >> m >> a;
 	hor = (n + a - 1) / a;
 	ver = (m + a - 1) / a;
 
 	plits = hor * ver;
-	cout << "Êîëè÷åñâòî ïëèò: " << plits;
+	cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÐ²Ñ‚Ð¾ Ð¿Ð»Ð¸Ñ‚: " << plits;
 	return 0;
 }
+
