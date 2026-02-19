@@ -16,4 +16,3 @@ int main() {
 	cout << "Количесвто плит: " << plits;
 	return 0;
 }
-
