@@ -1,1 +1,36 @@
 
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+int main() {
+	setlocale(LC_ALL, "russian");
+	int code;
+	string strpeti;
+	string result = "";
+	string symbols = "[]\\^`_";
+	string glasnie = "aeiouyAEIOUY";
+	cout << "Введите строку из пропинсных и строчных латинских букв (от 1 до 100 символов) : " << endl;
+	cin >> strpeti;
+	if (strpeti.length() > 100 ) {
+		cout << "Ошибка! ";
+		return 1;
+	}
+	for (int i = 0; i < strpeti.length(); i++) {
+		char c = strpeti[i];
+		code = (int)c;
+		bool isSym = (symbols.find(c) != string::npos);
+		bool isLatin = (code >= 65 && code <= 90) || (code >= 97 && code <= 122);
+		if (isSym || !isLatin) {
+			cout << "Ошибка! ";
+			return 1;
+		}
+		if (glasnie.find(strpeti[i]) == string::npos) {
+			strpeti[i] = tolower(strpeti[i]);
+			result = result + "." + strpeti[i];
+		}
+	}
+	cout << result;
+	return 0;
+}
