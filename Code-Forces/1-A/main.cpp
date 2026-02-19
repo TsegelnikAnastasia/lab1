@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 
 using namespace std;
 
@@ -11,7 +10,7 @@ int main() {
 	ver = (m + a - 1) / a;
 
 	plits = hor * ver;
-	cout << plits;
+	cout << plits << endl;
 	return 0;
 }
 
