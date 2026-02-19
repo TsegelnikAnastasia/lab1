@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-	long n, m, a, hor, ver;
-	int plits;
+	long long n, m, a, hor, ver;
+	long plits;
 	cin >> n >> m >> a;
 	hor = (n + a - 1) / a;
 	ver = (m + a - 1) / a;
